@@ -23,12 +23,25 @@ public class Main {
         //empty.
 
         //System.out.println();
+        /*
         while (!queue.isEmpty()) {
             System.out.println();
             System.out.println("Printed document: " + queue.removeFirst());
             displayNextToBePrinted(queue);
             displayQueue(queue);
+        } */
+
+        for (int it = 0; it < queue.size(); it++) {
+            if (queue.isEmpty()) {
+                System.out.println("The queue is empty. Then it is not possible to print anything.");
+            } else {
+                System.out.println();
+                System.out.println("Printed document: " + queue.removeFirst());
+                displayNextToBePrinted(queue);
+                displayQueue(queue);
+            }
         }
+
         /*
         System.out.println();
         System.out.println("Printed document: " + queue.removeFirst());
