@@ -23,15 +23,15 @@ public class Main {
         //empty.
 
         //System.out.println();
-        /*
+
         while (!queue.isEmpty()) {
             System.out.println();
             System.out.println("Printed document: " + queue.removeFirst());
             displayNextToBePrinted(queue);
             displayQueue(queue);
-        } */
+        }
 
-        for (int it = 0; it < queue.size(); it++) {
+        /*for (int it = 0; it < queue.size(); it++) {
             if (queue.isEmpty()) {
                 System.out.println("The queue is empty. Then it is not possible to print anything.");
             } else {
@@ -40,7 +40,7 @@ public class Main {
                 displayNextToBePrinted(queue);
                 displayQueue(queue);
             }
-        }
+        } */
 
         /*
         System.out.println();
@@ -78,13 +78,14 @@ public class Main {
             System.out.println("The queue is empty.");
         } else {
             System.out.println("Documents in the Queue to be Printed:");
-            for (int i = 0; i < queue.size(); i++) {
+            /*for (int i = 0; i < queue.size(); i++) {
                 System.out.print(queue.get(i) + " - ");
             }
-            /*System.out.println();
+            System.out.println();
+             */
             for (String doc : queue) {
                 System.out.print(doc + " - ");
-            } */
+            }
 
         }
     }
